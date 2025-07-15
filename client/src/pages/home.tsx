@@ -26,22 +26,20 @@ export default function Home() {
                 We don't just solve problems – we <span className="font-semibold text-white">unlock potential</span>. 
                 From cutting-edge technology to strategic insights, we're your partner in digital transformation.
               </p>
-              <div className="flex flex-col sm:flex-row gap-4">
-                <Link href="/contact">
-                  <Button size="lg" className="bg-white text-primary hover:bg-gray-50 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">
-                    Start Your Journey
-                  </Button>
-                </Link>
-                <Link href="/about">
-                  <Button
-                    size="lg"
-                    variant="outline"
-                    className="border-2 border-white text-white hover:bg-white hover:text-primary transition-all duration-300"
-                  >
-                    Our Story
-                  </Button>
-                </Link>
-              </div>
+              <Link href="/contact">
+                <Button size="lg" className="bg-white text-primary hover:bg-gray-50 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">
+                  Start Your Journey
+                </Button>
+              </Link>
+              <Link href="/about">
+                <Button
+                  size="lg"
+                  variant="outline"
+                  className="border-2 border-white text-white hover:bg-white hover:text-primary transition-all duration-300"
+                >
+                  Our Story
+                </Button>
+              </Link>
               
             </div>
             <div className="relative">
