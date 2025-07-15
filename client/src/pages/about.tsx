@@ -38,7 +38,7 @@ export default function About() {
               </p>
             </div>
             <div className="text-center">
-              <div className="w-12 h-12 bg-primary-dark rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Trophy className="text-white h-6 w-6" />
               </div>
               <h3 className="text-lg font-semibold mb-3">Excellence</h3>

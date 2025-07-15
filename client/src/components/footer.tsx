@@ -6,14 +6,7 @@ export default function Footer() {
     <footer className="bg-slate-950 text-white py-8">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-6">
-          <div className="flex items-center justify-center gap-3 mb-4">
-            <img 
-              src="/src/assets/sigma7-logo.png" 
-              alt="Sigma7 Group Logo" 
-              className="h-8 w-auto"
-            />
-            <div className="text-2xl font-bold text-primary">Sigma7 Group</div>
-          </div>
+          
           <p className="text-slate-300 text-sm max-w-md mx-auto">
             Professional business solutions and technology consulting.
           </p>
@@ -22,7 +15,7 @@ export default function Footer() {
         <div className="border-t border-slate-800 pt-6">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-slate-400 text-sm">
-              &copy; 2024 Sigma7 Group. All rights reserved.
+              &copy; {new Date().getFullYear()} Sigma7 Group Inc. All rights reserved.
             </p>
             <div className="flex space-x-4 mt-4 md:mt-0">
               <a

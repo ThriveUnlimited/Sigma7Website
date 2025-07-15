@@ -29,7 +29,7 @@ export default function Navigation() {
                 <img 
                   src="/src/assets/sigma7-logo.png" 
                   alt="Sigma7 Group Logo" 
-                  className="h-8 w-auto"
+                  className="h-10 w-auto"
                 />
                 
               </div>
