@@ -52,13 +52,7 @@ export default function Home() {
                   alt="Modern corporate office building"
                   className="rounded-lg shadow-2xl w-full h-auto"
                 />
-                <div className="absolute -top-4 -right-4 w-20 h-20 bg-white rounded-xl flex items-center justify-center shadow-lg p-2">
-                  <img 
-                    src="@assets/Sigma7Group-NewLogo_1752541862716.png" 
-                    alt="Sigma7 Group Logo" 
-                    className="w-full h-full object-contain"
-                  />
-                </div>
+                
               </div>
             </div>
           </div>

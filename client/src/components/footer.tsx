@@ -8,7 +8,7 @@ export default function Footer() {
         <div className="text-center mb-6">
           <div className="flex items-center justify-center gap-3 mb-4">
             <img 
-              src="@assets/Sigma7Group-NewLogo_1752541862716.png" 
+              src="/src/assets/sigma7-logo.png" 
               alt="Sigma7 Group Logo" 
               className="h-8 w-auto"
             />

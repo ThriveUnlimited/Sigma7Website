@@ -27,11 +27,11 @@ export default function Navigation() {
             <Link href="/">
               <div className="flex items-center gap-3 cursor-pointer">
                 <img 
-                  src="@assets/Sigma7Group-NewLogo_1752541862716.png" 
+                  src="/src/assets/sigma7-logo.png" 
                   alt="Sigma7 Group Logo" 
                   className="h-8 w-auto"
                 />
-                <span className="text-xl font-bold text-primary hidden sm:block">Sigma7 Group</span>
+                
               </div>
             </Link>
           </div>
