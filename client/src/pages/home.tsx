@@ -42,16 +42,7 @@ export default function Home() {
                   </Button>
                 </Link>
               </div>
-              <div className="mt-8 flex items-center gap-6 text-blue-100">
-                <div className="flex items-center gap-2">
-                  <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
-                  <span className="text-sm">150+ Projects Delivered</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
-                  <span className="text-sm">50+ Happy Clients</span>
-                </div>
-              </div>
+              
             </div>
             <div className="relative">
               <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-accent/20 rounded-xl blur-3xl"></div>
