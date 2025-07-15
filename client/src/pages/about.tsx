@@ -9,7 +9,7 @@ export default function About() {
       <Navigation />
       {/* About Section */}
       <section className="pt-32 pb-20 bg-white">
-        <div className="max-w-3xl mx-auto px-9">
+        <div className="max-auto mx-auto px-9">
           <div className="text-center mb-16">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">About Sigma7 Group</h1>
             <p className="text-lg text-neutral max-w-2xl mx-auto">
@@ -34,16 +34,12 @@ export default function About() {
               </div>
             </div>
             <div className="relative">
-              <div className="aspect-square bg-gradient-to-br from-primary/10 to-accent/10 rounded-xl flex items-center justify-center">
-                <div className="text-center">
-                  <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
-                    <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197m13.5-1a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0z" />
-                    </svg>
-                  </div>
-                  <p className="text-neutral font-medium">Team Photo</p>
-                  <p className="text-sm text-neutral/70">Coming Soon</p>
-                </div>
+              <div className="aspect-square bg-gradient-to-br from-primary/10 to-accent/10 rounded-xl overflow-hidden">
+                <img 
+                  src="/src/assets/team-photo.jpg" 
+                  alt="Sigma7 Group Team" 
+                  className="w-full h-full object-cover rounded-xl"
+                />
               </div>
             </div>
           </div>
@@ -78,18 +74,7 @@ export default function About() {
             </div>
           </div>
 
-          <div className="text-center section-bg rounded-xl p-8">
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
-              <div>
-                <div className="text-3xl font-bold text-primary mb-2">150+</div>
-                <div className="text-neutral">Projects Completed</div>
-              </div>
-              <div>
-                <div className="text-3xl font-bold text-primary mb-2">50+</div>
-                <div className="text-neutral">Enterprise Clients</div>
-              </div>
-            </div>
-          </div>
+          
         </div>
       </section>
       <Footer />
