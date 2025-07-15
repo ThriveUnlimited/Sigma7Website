@@ -2,6 +2,7 @@ import { Lightbulb, Handshake, Trophy } from "lucide-react";
 import Navigation from "@/components/navigation";
 import Footer from "@/components/footer";
 import { Card, CardContent } from "@/components/ui/card";
+import teamPhoto from "@/assets/team-photo.jpg";
 
 export default function About() {
   return (
@@ -36,7 +37,7 @@ export default function About() {
             <div className="relative max-w-58 mx-auto">
               <div className="aspect-rounded bg-gradient-to-br from-primary/10 to-accent/10 rounded-xl overflow-hidden">
                 <img 
-                  src="/src/assets/team-photo.jpg" 
+                  src={teamPhoto} 
                   alt="Sigma7 Group Team" 
                   className="w-full h-full object-cover rounded-xl"
                 />

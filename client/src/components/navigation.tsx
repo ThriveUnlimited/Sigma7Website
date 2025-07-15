@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link, useLocation } from "wouter";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import logoImage from "@/assets/sigma7-logo.png";
 
 export default function Navigation() {
   const [location] = useLocation();
@@ -27,7 +28,7 @@ export default function Navigation() {
             <Link href="/">
               <div className="flex items-center gap-3 cursor-pointer">
                 <img 
-                  src="/src/assets/sigma7-logo.png" 
+                  src={logoImage} 
                   alt="Sigma7 Group Logo" 
                   className="h-10 w-auto"
                 />

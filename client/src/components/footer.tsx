@@ -1,5 +1,6 @@
 import { Link } from "wouter";
 import { Facebook, Twitter, Linkedin } from "lucide-react";
+import logoImage from "@/assets/sigma7-logo.png";
 
 export default function Footer() {
   return (
