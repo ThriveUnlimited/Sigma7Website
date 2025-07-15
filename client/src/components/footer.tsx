@@ -17,18 +17,18 @@ export default function Footer() {
             <p className="text-slate-400 text-sm">
               &copy; {new Date().getFullYear()} Sigma7 Group Inc. All rights reserved.
             </p>
-            <div className="flex space-x-4 mt-4 md:mt-0">
+            <div className="flex space-x-6 mt-4 md:mt-0">
               <a
                 href="#"
-                className="w-8 h-8 bg-slate-800 rounded-lg flex items-center justify-center hover:bg-primary transition-colors"
+                className="text-slate-400 hover:text-primary transition-colors text-sm"
               >
-                <Linkedin className="h-4 w-4" />
+                Terms
               </a>
               <a
                 href="#"
-                className="w-8 h-8 bg-slate-800 rounded-lg flex items-center justify-center hover:bg-primary transition-colors"
+                className="text-slate-400 hover:text-primary transition-colors text-sm"
               >
-                <Twitter className="h-4 w-4" />
+                Privacy
               </a>
             </div>
           </div>

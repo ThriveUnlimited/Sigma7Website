@@ -49,21 +49,15 @@ export default function Services() {
             <div className="border-l-4 border-primary-dark pl-6">
               <div className="flex items-center mb-3">
                 <Shield className="h-8 w-8 text-primary-dark mr-3" />
-                <h3 className="text-xl font-semibold">Cybersecurity</h3>
+                <h3 className="text-xl font-semibold">Documentation & Support</h3>
               </div>
               <p className="text-neutral">
-                Comprehensive security solutions to protect digital assets and ensure compliance.
+                No product is complete without thorough documentation nor without a solid support plan.
               </p>
             </div>
           </div>
 
-          <div className="text-center">
-            <Link href="/contact">
-              <Button size="lg" className="bg-primary hover:bg-primary-dark">
-                Get Started
-              </Button>
-            </Link>
-          </div>
+      
         </div>
       </section>
 
