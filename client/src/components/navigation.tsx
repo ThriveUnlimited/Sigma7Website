@@ -25,8 +25,13 @@ export default function Navigation() {
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center">
             <Link href="/">
-              <div className="text-2xl font-bold text-primary cursor-pointer">
-                Sigma7 Group
+              <div className="flex items-center gap-3 cursor-pointer">
+                <img 
+                  src="@assets/Sigma7Group-NewLogo_1752541862716.png" 
+                  alt="Sigma7 Group Logo" 
+                  className="h-8 w-auto"
+                />
+                <span className="text-xl font-bold text-primary hidden sm:block">Sigma7 Group</span>
               </div>
             </Link>
           </div>

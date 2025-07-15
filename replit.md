@@ -52,7 +52,8 @@ The application follows a full-stack monorepo architecture with clear separation
 ## Recent Changes (January 2025)
 - ✓ Enhanced hero section with dynamic gradients, animations, and engaging copy
 - ✓ Added interactive service cards with hover effects and gradients
-- ✓ Implemented modern visual elements: badges, statistics, and brand symbol
+- ✓ Integrated official Sigma7 Group logo throughout the site (navigation, hero, footer)
+- ✓ Removed statistics section from hero based on user feedback
 - ✓ Improved typography with gradient text and better spacing
 - ✓ Added subtle animations and transitions for better user engagement
 

@@ -6,7 +6,14 @@ export default function Footer() {
     <footer className="bg-slate-950 text-white py-8">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-6">
-          <div className="text-2xl font-bold text-primary mb-2">Sigma7 Group</div>
+          <div className="flex items-center justify-center gap-3 mb-4">
+            <img 
+              src="@assets/Sigma7Group-NewLogo_1752541862716.png" 
+              alt="Sigma7 Group Logo" 
+              className="h-8 w-auto"
+            />
+            <div className="text-2xl font-bold text-primary">Sigma7 Group</div>
+          </div>
           <p className="text-slate-300 text-sm max-w-md mx-auto">
             Professional business solutions and technology consulting.
           </p>
