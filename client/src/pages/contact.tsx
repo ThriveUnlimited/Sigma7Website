@@ -71,75 +71,47 @@ export default function Contact() {
       <Navigation />
       
       {/* Contact Section */}
-      <section className="pt-32 pb-20 bg-slate-900 text-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="pt-32 pb-20 bg-white">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h1 className="text-4xl md:text-5xl font-bold mb-4">Get In Touch</h1>
-            <p className="text-xl text-slate-300 max-w-2xl mx-auto">
-              Ready to transform your business? Contact us today to discuss how we can help you achieve your goals.
+            <h1 className="text-4xl md:text-5xl font-bold mb-4">Contact Us</h1>
+            <p className="text-lg text-neutral max-w-2xl mx-auto">
+              Ready to discuss your project? Get in touch with our team.
             </p>
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Contact Information */}
-            <div>
-              <h2 className="text-2xl font-semibold mb-8">Contact Information</h2>
+            <div className="space-y-6">
+              <div className="flex items-center space-x-4">
+                <Mail className="h-6 w-6 text-primary" />
+                <div>
+                  <h4 className="font-semibold">Email</h4>
+                  <p className="text-neutral">contact@sigma7group.com</p>
+                </div>
+              </div>
               
-              <div className="space-y-6">
-                <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 bg-primary rounded-lg flex items-center justify-center flex-shrink-0">
-                    <MapPin className="text-white h-6 w-6" />
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-lg mb-1">Office Location</h4>
-                    <p className="text-slate-300">
-                      123 Business Center Drive<br />
-                      Suite 500<br />
-                      New York, NY 10001
-                    </p>
-                  </div>
+              <div className="flex items-center space-x-4">
+                <Phone className="h-6 w-6 text-primary" />
+                <div>
+                  <h4 className="font-semibold">Phone</h4>
+                  <p className="text-neutral">(555) 123-4567</p>
                 </div>
+              </div>
 
-                <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 bg-primary rounded-lg flex items-center justify-center flex-shrink-0">
-                    <Phone className="text-white h-6 w-6" />
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-lg mb-1">Phone</h4>
-                    <p className="text-slate-300">(555) 123-4567</p>
-                  </div>
-                </div>
-
-                <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 bg-primary rounded-lg flex items-center justify-center flex-shrink-0">
-                    <Mail className="text-white h-6 w-6" />
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-lg mb-1">Email</h4>
-                    <p className="text-slate-300">contact@sigma7group.com</p>
-                  </div>
-                </div>
-
-                <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 bg-primary rounded-lg flex items-center justify-center flex-shrink-0">
-                    <Clock className="text-white h-6 w-6" />
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-lg mb-1">Business Hours</h4>
-                    <p className="text-slate-300">
-                      Monday - Friday: 9:00 AM - 6:00 PM<br />
-                      Saturday: 10:00 AM - 2:00 PM<br />
-                      Sunday: Closed
-                    </p>
-                  </div>
+              <div className="flex items-center space-x-4">
+                <Clock className="h-6 w-6 text-primary" />
+                <div>
+                  <h4 className="font-semibold">Business Hours</h4>
+                  <p className="text-neutral">Monday - Friday: 9:00 AM - 6:00 PM</p>
                 </div>
               </div>
             </div>
 
             {/* Contact Form */}
-            <Card className="bg-slate-800 border-slate-700">
+            <Card className="bg-white border border-slate-200">
               <CardContent className="p-8">
-                <h3 className="text-2xl font-semibold mb-6 text-white">Send Us a Message</h3>
+                <h3 className="text-xl font-semibold mb-6">Send a Message</h3>
                 
                 <Form {...form}>
                   <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
@@ -149,11 +121,10 @@ export default function Contact() {
                         name="firstName"
                         render={({ field }) => (
                           <FormItem>
-                            <FormLabel className="text-white">First Name</FormLabel>
+                            <FormLabel>First Name</FormLabel>
                             <FormControl>
                               <Input
                                 {...field}
-                                className="bg-slate-700 border-slate-600 text-white placeholder:text-slate-400"
                                 placeholder="Enter your first name"
                               />
                             </FormControl>
@@ -166,11 +137,10 @@ export default function Contact() {
                         name="lastName"
                         render={({ field }) => (
                           <FormItem>
-                            <FormLabel className="text-white">Last Name</FormLabel>
+                            <FormLabel>Last Name</FormLabel>
                             <FormControl>
                               <Input
                                 {...field}
-                                className="bg-slate-700 border-slate-600 text-white placeholder:text-slate-400"
                                 placeholder="Enter your last name"
                               />
                             </FormControl>
@@ -185,12 +155,11 @@ export default function Contact() {
                       name="email"
                       render={({ field }) => (
                         <FormItem>
-                          <FormLabel className="text-white">Email Address</FormLabel>
+                          <FormLabel>Email Address</FormLabel>
                           <FormControl>
                             <Input
                               {...field}
                               type="email"
-                              className="bg-slate-700 border-slate-600 text-white placeholder:text-slate-400"
                               placeholder="Enter your email address"
                             />
                           </FormControl>
@@ -204,11 +173,10 @@ export default function Contact() {
                       name="company"
                       render={({ field }) => (
                         <FormItem>
-                          <FormLabel className="text-white">Company</FormLabel>
+                          <FormLabel>Company</FormLabel>
                           <FormControl>
                             <Input
                               {...field}
-                              className="bg-slate-700 border-slate-600 text-white placeholder:text-slate-400"
                               placeholder="Enter your company name"
                             />
                           </FormControl>
@@ -222,10 +190,10 @@ export default function Contact() {
                       name="service"
                       render={({ field }) => (
                         <FormItem>
-                          <FormLabel className="text-white">Service Interest</FormLabel>
+                          <FormLabel>Service Interest</FormLabel>
                           <Select onValueChange={field.onChange} defaultValue={field.value}>
                             <FormControl>
-                              <SelectTrigger className="bg-slate-700 border-slate-600 text-white">
+                              <SelectTrigger>
                                 <SelectValue placeholder="Select a service..." />
                               </SelectTrigger>
                             </FormControl>
@@ -246,12 +214,12 @@ export default function Contact() {
                       name="message"
                       render={({ field }) => (
                         <FormItem>
-                          <FormLabel className="text-white">Message</FormLabel>
+                          <FormLabel>Message</FormLabel>
                           <FormControl>
                             <Textarea
                               {...field}
                               rows={4}
-                              className="bg-slate-700 border-slate-600 text-white placeholder:text-slate-400 resize-none"
+                              className="resize-none"
                               placeholder="Tell us about your project or how we can help..."
                             />
                           </FormControl>
@@ -264,7 +232,7 @@ export default function Contact() {
                       type="submit"
                       size="lg"
                       disabled={contactMutation.isPending}
-                      className="w-full bg-gradient-to-r from-primary to-primary-dark hover:from-primary-dark hover:to-primary"
+                      className="w-full bg-primary hover:bg-primary-dark"
                     >
                       {contactMutation.isPending ? (
                         "Sending..."

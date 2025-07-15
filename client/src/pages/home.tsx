@@ -16,24 +16,24 @@ export default function Home() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
-                Professional Business Solutions for Modern Enterprises
+                Professional Business Solutions
               </h1>
               <p className="text-xl mb-8 text-blue-100">
-                Sigma7 Group delivers innovative technology solutions and strategic consulting services that drive business growth and operational excellence.
+                Technology consulting and strategic solutions for modern enterprises.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <Link href="/about">
+                <Link href="/contact">
                   <Button size="lg" className="bg-white text-primary hover:bg-gray-50">
-                    Learn More
+                    Get Started
                   </Button>
                 </Link>
-                <Link href="/contact">
+                <Link href="/about">
                   <Button
                     size="lg"
                     variant="outline"
                     className="border-2 border-white text-white hover:bg-white hover:text-primary"
                   >
-                    Contact Us
+                    Learn More
                   </Button>
                 </Link>
               </div>
@@ -50,74 +50,50 @@ export default function Home() {
       </section>
 
       {/* Services Preview */}
-      <section className="py-20 section-bg">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="py-20 bg-white">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
-              Our Core Services
+              What We Do
             </h2>
-            <p className="text-xl text-neutral max-w-3xl mx-auto">
-              Comprehensive business solutions designed to optimize operations and accelerate growth
-            </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <Card className="hover:shadow-xl transition-shadow">
-              <CardContent className="p-8">
-                <div className="text-primary mb-4">
-                  <Code className="h-12 w-12" />
-                </div>
-                <h3 className="text-xl font-semibold mb-4">Technology Solutions</h3>
-                <p className="text-neutral mb-6">
-                  Custom software development, cloud infrastructure, and digital transformation services.
-                </p>
-                <Link href="/services">
-                  <Button variant="ghost" className="text-primary p-0 hover:bg-transparent">
-                    Learn More <ArrowRight className="ml-2 h-4 w-4" />
-                  </Button>
-                </Link>
-              </CardContent>
-            </Card>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+            <div className="text-center">
+              <div className="text-primary mb-4">
+                <Code className="h-10 w-10 mx-auto" />
+              </div>
+              <h3 className="text-lg font-semibold mb-3">Technology</h3>
+              <p className="text-neutral">
+                Custom solutions and digital transformation
+              </p>
+            </div>
 
-            <Card className="hover:shadow-xl transition-shadow">
-              <CardContent className="p-8">
-                <div className="text-primary mb-4">
-                  <TrendingUp className="h-12 w-12" />
-                </div>
-                <h3 className="text-xl font-semibold mb-4">Business Consulting</h3>
-                <p className="text-neutral mb-6">
-                  Strategic planning, process optimization, and performance improvement consulting.
-                </p>
-                <Link href="/services">
-                  <Button variant="ghost" className="text-primary p-0 hover:bg-transparent">
-                    Learn More <ArrowRight className="ml-2 h-4 w-4" />
-                  </Button>
-                </Link>
-              </CardContent>
-            </Card>
+            <div className="text-center">
+              <div className="text-primary mb-4">
+                <TrendingUp className="h-10 w-10 mx-auto" />
+              </div>
+              <h3 className="text-lg font-semibold mb-3">Consulting</h3>
+              <p className="text-neutral">
+                Strategic planning and business optimization
+              </p>
+            </div>
 
-            <Card className="hover:shadow-xl transition-shadow">
-              <CardContent className="p-8">
-                <div className="text-primary mb-4">
-                  <Shield className="h-12 w-12" />
-                </div>
-                <h3 className="text-xl font-semibold mb-4">Cybersecurity</h3>
-                <p className="text-neutral mb-6">
-                  Comprehensive security solutions to protect your digital assets and ensure compliance.
-                </p>
-                <Link href="/services">
-                  <Button variant="ghost" className="text-primary p-0 hover:bg-transparent">
-                    Learn More <ArrowRight className="ml-2 h-4 w-4" />
-                  </Button>
-                </Link>
-              </CardContent>
-            </Card>
+            <div className="text-center">
+              <div className="text-primary mb-4">
+                <Shield className="h-10 w-10 mx-auto" />
+              </div>
+              <h3 className="text-lg font-semibold mb-3">Security</h3>
+              <p className="text-neutral">
+                Cybersecurity and compliance solutions
+              </p>
+            </div>
           </div>
 
-          <div className="text-center mt-12">
+          <div className="text-center">
             <Link href="/services">
-              <Button size="lg" className="bg-primary hover:bg-primary-dark">
-                View All Services
+              <Button variant="outline" className="border-primary text-primary hover:bg-primary hover:text-white">
+                View Services
               </Button>
             </Link>
           </div>
