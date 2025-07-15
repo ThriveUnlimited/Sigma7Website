@@ -33,7 +33,7 @@ export default function About() {
                 </p>
               </div>
             </div>
-            <div className="relative">
+            <div className="relative max-w-48 mx-auto">
               <div className="aspect-square bg-gradient-to-br from-primary/10 to-accent/10 rounded-xl overflow-hidden">
                 <img 
                   src="/src/assets/team-photo.jpg" 
