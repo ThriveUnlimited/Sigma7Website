@@ -9,43 +9,7 @@
     <script type="module" src="/src/main.tsx"></script>
     <!-- This is a replit script which adds a banner on the top of the page when opened in development mode outside the replit environment -->
     <script type="text/javascript" src="https://replit.com/public/js/replit-dev-banner.js"></script>
-    <!-- Support Chat Widget -->
-    <script>
-      (function() {
-        // Configuration
-        window.SupportChatConfig = {
-          companyId: 1,
-          baseUrl: 'https://9030dca3-37a4-422f-94c2-5185617ae348-00-wu14g44d1q88.riker.replit.dev',
-          position: 'bottom-right', // 'bottom-right' | 'bottom-left'
-          theme: 'light', // 'light' | 'dark'
-          primaryColor: '#2563eb',
-          welcomeMessage: "Hi! I'm here to help. What can I assist you with today?",
-          placeholder: "Type your message...",
-          buttonText: "Need more help? Create a ticket"
-        };
-
-        // Create widget container
-        var widgetContainer = document.createElement('div');
-        widgetContainer.id = 'support-chat-widget';
-        document.body.appendChild(widgetContainer);
-
-        // Load widget styles
-        var link = document.createElement('link');
-        link.rel = 'stylesheet';
-        link.href = window.SupportChatConfig.baseUrl + '/widget/styles.css';
-        document.head.appendChild(link);
-
-        // Load widget script
-        var script = document.createElement('script');
-        script.src = window.SupportChatConfig.baseUrl + '/widget/widget.js';
-        script.async = true;
-        script.onload = function() {
-          console.log('Support chat widget loaded successfully');
-        };
-        document.head.appendChild(script);
-      })();
-    </script>
-    <!-- End Support Chat Widget -->
+    
   </body>
   
 </html>
